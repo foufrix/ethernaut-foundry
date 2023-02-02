@@ -3,4 +3,9 @@ src = 'src'
 out = 'out'
 libs = ['lib']
 
+[rpc_endpoints]
+goerli = 'https://goerli.infura.io/v3/apikey'
+
+etherscan_api_key = "YOURETHERSCANAPIKEY"
+
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
