@@ -13,6 +13,8 @@ contract Level02Test is Test {
     }
 
     function testLevel02() public {
-
+      //Claim ownership
+      vm.prank(vm.addr(2));
+      level02.Fal1out();
     }
 }
