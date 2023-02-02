@@ -4,24 +4,23 @@ pragma solidity ^0.8.13;
 import "forge-std/Test.sol";
 import "../src/00-HelloEthernaut.sol";
 
-contract CounterTest is Test {
-    //HelloEthernaut public helloEthernaut;
-    Level0 helloEthernaut = Level0(0xcA795B3961748aef7e2EFC4C997813839797D77D);
+contract Level0Test is Test {
+    Level0 public helloEthernaut;
 
-    // function setUp() public {
-    //     helloEthernaut = new Level0("whatever");
-    // }
+    function setUp() public {
+        helloEthernaut = new Level0("whatever");
+    }
     
 
     function testInfo() public {
       vm.startBroadcast();
-      helloEthernaut.info();
-      helloEthernaut.info1();
-      helloEthernaut.info2("hello");
-      helloEthernaut.infoNum();
-      helloEthernaut.info42();
-      helloEthernaut.theMethodName();
-      helloEthernaut.theMethodName();
+      emit log(helloEthernaut.info());
+      emit log(helloEthernaut.info1());
+      emit log(helloEthernaut.info2("hello"));
+      emit log_uint(helloEthernaut.infoNum());
+      emit log(helloEthernaut.info42());
+      emit log(helloEthernaut.theMethodName());
+      emit log(helloEthernaut.method7123949());
       helloEthernaut.authenticate(helloEthernaut.password());
       vm.stopBroadcast();
     }
