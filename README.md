@@ -17,3 +17,7 @@ Run for a specific file :
 1. Add RPC url to `foundry.toml`
 2. Add `PRIVATE_KEY` to `.env`
 3. Call possible using : `forge script ./script/Level01.sol  --broadcast -vvvv --rpc-url goerli `
+
+## Deploy an Attacker Contract
+
+`forge create --rpc-url goerli --private-key <your_private> src/Level04-Attacker.sol:AttackerLevel04`
