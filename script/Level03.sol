@@ -34,25 +34,4 @@ contract Attacker is Script {
       console.log("Consecutive Wins end call: ", level03.consecutiveWins());
       vm.stopBroadcast();
     }
-
-  //   function flip(bool _guess) public returns (bool) {
-  //     uint256 blockValue = uint256(blockhash(block.number - 1));
-
-  //     if (lastHash == blockValue) {
-  //       revert();
-  //     }
-
-  //     lastHash = blockValue;
-  //     uint256 coinFlip = blockValue / FACTOR;
-  //     bool side = coinFlip == 1 ? true : false;
-
-  //     if (side == _guess) {
-  //       bool isTrue = level03.flip(_guess);
-  //       if  (isTrue) {
-  //         consecutiveWins++;
-  //       }
-  //     } else {
-  //       return false;
-  //     }
-  // }
 }
