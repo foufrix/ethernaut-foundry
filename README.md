@@ -12,6 +12,12 @@ Run for a specific file :
 
 `forge test -vvv --match-path ./test/Level01.sol `
 
+
+## Add env parameters 
+
+`cp .env.example .env`
+
+Add wallet information, for better security don't use your main wallet for testing code.
 ## Make Outsidecall to solve ethernaut
 
 1. Add RPC url to `foundry.toml`
