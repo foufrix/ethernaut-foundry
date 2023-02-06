@@ -4,7 +4,7 @@ pragma solidity ^0.8.13;
 import "forge-std/Script.sol";
 import "../src/Level09-Attacker.sol";
 
-contract Attacker is Script {
+contract AttackerScript is Script {
     Level09Attacker attacker;
 
     function run() public {

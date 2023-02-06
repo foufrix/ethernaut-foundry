@@ -5,7 +5,7 @@ import "forge-std/Script.sol";
 import "../src/Level07.sol";
 import "../src/AttackerSelfDestruct.sol";
 
-contract Attacker is Script {
+contract AttackerScript is Script {
     Level07 level07 = Level07(0xC937D47b2567Bbe624cF9317252dAae1BD7bCF58);
     SelfDestruct attacker = SelfDestruct(payable(0xAcED7c5Fa3C803a8f2C2487196a46F3313705f38));
 

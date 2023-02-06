@@ -4,7 +4,7 @@ pragma solidity ^0.8.13;
 import "forge-std/Script.sol";
 import "../src/Level01.sol";
 
-contract Attacker is Script {
+contract AttackerScript is Script {
     Level01 level01 = Level01(payable(address(0x09140Ba48cC24236546B542316bCef50e4eA0bF3)));
 
     function run() public {

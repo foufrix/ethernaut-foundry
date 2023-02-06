@@ -4,7 +4,7 @@ pragma solidity ^0.8.13;
 import "forge-std/Script.sol";
 import "../src/Level03.sol";
 
-contract Attacker is Script {
+contract AttackerScript is Script {
     Level03 level03 = Level03(0xA87f1bFF996517fC236c20bb30d918eb9fbDC849);
 
     uint256 lastHash;

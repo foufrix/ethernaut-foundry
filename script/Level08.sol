@@ -4,7 +4,7 @@ pragma solidity ^0.8.13;
 import "forge-std/Script.sol";
 import "../src/Level08.sol";
 
-contract Attacker is Script {
+contract AttackerScript is Script {
     Level08 level08 = Level08(0x6E1930fA3d29d183450DB283cF91F17EF4c16474);
 
     function run() public {
