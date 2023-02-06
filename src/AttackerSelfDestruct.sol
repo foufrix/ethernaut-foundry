@@ -6,7 +6,7 @@ import "./Level04.sol";
 contract SelfDestruct {
     address owner;
 
-    constructor() public {
+    constructor() {
         owner = msg.sender;
     }
 

@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Script.sol";
-import "../src/ReentrancyAttacker.sol";
+import "../src/AttackerReentrancy.sol";
 
 contract AttackerScript is Script {
     ReentrancyAttacker attacker;
