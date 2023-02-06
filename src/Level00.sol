@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract Level0 {
+contract Level00 {
 
   string public password;
   uint8 public infoNum = 42;
