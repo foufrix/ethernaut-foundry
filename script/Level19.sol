@@ -18,7 +18,6 @@ contract AttackerScript is Script {
       // Slot of the codex length
       bytes32 codex_index = keccak256((abi.encodePacked(uint256(1))));
 
-
       //Slot of the owner address
       uint256 owner_index = 2 ** 256 - 1 - uint(codex_index) + 1;
 
