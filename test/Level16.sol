@@ -32,6 +32,7 @@ contract Level16Test is Test {
       console.log(level16.timeZone1Library());
 
       //Call the delegatecall to trigger our attacker with our address
+      // Transform address into uint256
       level16.setFirstTime(uint256(uint160(vm.addr(2))));
 
       //CHeck that we are owner
