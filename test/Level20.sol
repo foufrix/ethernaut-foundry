@@ -30,9 +30,9 @@ contract Level20Test is Test {
       level20.setWithdrawPartner(address(attacker));
       vm.stopPrank();
 
-      //Withdraw should not work TODO; find a way to properly make test pass using Foundry
-      // Currently the test will fail, but this is expected.
+      //Withdraw should not work
       vm.prank(vm.addr(1));
+      vm.expectRevert();
       level20.withdraw{gas : 10000 wei}();
     }
 }
