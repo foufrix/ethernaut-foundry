@@ -6,11 +6,11 @@
 
 ## Run test
 
-`forge test -vvv`
+`forge test -vvvv`
 
 Run for a specific file :
 
-`forge test -vvv --match-path ./test/Level01.sol `
+`forge test -vvvv --match-path ./test/Level01.t.sol `
 
 ## Add env parameters
 
@@ -22,7 +22,7 @@ Add wallet information, for better security don't use your main wallet for testi
 
 1. Add RPC url to `foundry.toml`
 2. Add `PRIVATE_KEY` to `.env`
-3. Call possible using : `forge script ./script/Level01.sol  --broadcast -vvvv --rpc-url goerli `
+3. Call possible using : `forge script ./script/Level01.s.sol  --broadcast -vvvv --rpc-url goerli `
 
 ## Deploy an Attacker Contract
 
@@ -31,3 +31,13 @@ Add wallet information, for better security don't use your main wallet for testi
 ## Get the storage of a deployed contract
 
 `cast storage <contractAddress> <slotNumber> --rpc-url goerli`
+
+## Architecture
+
+### Test folder
+
+All the files to deploy & test the exploit locally
+
+### Script folder
+
+All the files to test exploit on chain
