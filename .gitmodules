@@ -13,3 +13,7 @@
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
 [submodule "/Users/raf/Documents/perso/smart-contracts-learning/ethernaut/solidity-6/lib/openzeppelin-contracts"]
 	branch = v3.4.0
+[submodule "lib/openzeppelin-contracts-06"]
+	path = lib/openzeppelin-contracts-06
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+	branch = v3.4.0
