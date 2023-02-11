@@ -6,3 +6,5 @@
 	path = lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
 	branch = v4.8.1
+[submodule "/Users/raf/Documents/perso/smart-contracts-learning/ethernaut/lib/openzeppelin-contracts"]
+	branch = v3.4.0
