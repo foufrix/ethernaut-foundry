@@ -8,3 +8,8 @@
 	branch = v4.8.1
 [submodule "/Users/raf/Documents/perso/smart-contracts-learning/ethernaut/lib/openzeppelin-contracts"]
 	branch = v3.4.0
+[submodule "solidity-6/lib/openzeppelin-contracts"]
+	path = solidity-6/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "/Users/raf/Documents/perso/smart-contracts-learning/ethernaut/solidity-6/lib/openzeppelin-contracts"]
+	branch = v3.4.0
