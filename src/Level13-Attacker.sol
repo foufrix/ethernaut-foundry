@@ -14,9 +14,7 @@ contract AttackerLevel13 {
 
 
   function attack(bytes8 addr) public {
-    //Solve that in Solidity 0..0
-    //bytes8 key2 = bytes8(uint64(msg.sender) & 0xFFFFFFFF0000FFFF);
     bytes8 key = addr & 0xFFFFFFFF0000FFFF;
-    level13.enter{gas: 8191 * 2 + 268 wei}(key);
+    level13.enter{gas: 8191 * 5 + 268 wei}(key);
   }
 }

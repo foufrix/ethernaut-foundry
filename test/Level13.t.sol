@@ -12,6 +12,7 @@ contract Level13Test is Test {
     function setUp() public {
       // Add ether
       vm.deal(vm.addr(1), 6 ether);
+      vm.deal(vm.addr(2), 6 ether);
 
       //Deploy contract
       vm.startPrank(vm.addr(1));
@@ -26,9 +27,10 @@ contract Level13Test is Test {
       console.log(vm.addr(2));
       console.log(uint32(uint64(7992)));
       console.log(uint16(uint160(tx.origin)));
-      //TODO: make this work
-      bytes8 key = bytes8(0x7a215E218DcCD6cF) & 0xFFFFFFFF0000FFFF;
-      attacker.attack(bytes8(0x7a215E218DcCD6cF));
+
+      //converts address into bytes8
+      bytes8 key = bytes8(uint64(uint160(tx.origin)));
+      attacker.attack(key);
       vm.stopPrank();
     }
 }
