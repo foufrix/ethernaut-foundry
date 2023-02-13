@@ -8,6 +8,7 @@ contract Level01Test is Test {
     Level01 public level01;
 
     function setUp() public {
+      vm.deal(vm.addr(2), 5 ether);
       vm.prank(vm.addr(1));
       level01 = new Level01();
     }
@@ -22,8 +23,6 @@ contract Level01Test is Test {
       emit log_address(level01.owner());
 
       vm.startPrank(vm.addr(2));
-
-      //TODO find a way to fund addr(2)
       emit log_uint(vm.addr(2).balance);
 
       //Contribute to appear into contributor
