@@ -9,6 +9,8 @@ contract AttackerScript is Script {
     Level21 level21 = Level21(0xD7bd97Ef100eAAfE7F4788e206E70A425bF673E8);
     Level21Attacker attacker;
 
+    //TODO: find why function out of gas (problem with block limit)
+
     function run() public {
       vm.startBroadcast(vm.envUint("PRIVATE_KEY"));
       attacker = new Level21Attacker(address(level21));

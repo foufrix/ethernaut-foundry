@@ -41,3 +41,37 @@ All the files to deploy & test the exploit locally
 ### Script folder
 
 All the files to test exploit on chain
+
+# State
+
+| Levels              | locally | on-chain (script)  |
+| ------------------- | ------- | ------------------ |
+| 00-HelloEthernaut   | Yes     | Yes                |
+| 01-Fallback         | Yes     | Yes                |
+| 02-Fallout          | Yes     | Yes                |
+| 03-CoinFlip         | Yes     | No                 |
+| 04-Telephone        | Yes     | Yes                |
+| 05-Token            | No      | No (logic present) |
+| 06-Delegation       | No      | Yes                |
+| 07-Force            | Yes     | Yes                |
+| 08-Vault            | No      | Yes                |
+| 09-King             | Yes     | Yes                |
+| 10-Reentrancy       | No      | Yes                |
+| 11-Elevator         | Yes     | Yes                |
+| 12-Privacy          | No      | Yes                |
+| 13-GatekeeperOne    | No      | No                 |
+| 14-GatekeeperTwo    | No      | No                 |
+| 15-NaughtCoin       | Yes     | Yes                |
+| 16-Preservation     | Yes     | Yes                |
+| 17-Recovery         | No      | Yes                |
+| 18-MagicNumber      | No      | No                 |
+| 19-AlienCodex       | No      | Yes                |
+| 20-Denial           | Yes     | Yes                |
+| 21-Shop             | No      | No                 |
+| 22-Dex              | Yes     | Yes                |
+| 23-DexTwo           | Yes     | No                 |
+| 24-PuzzleWallet     | No      | Yes                |
+| 25-Motorbike        | No      | Yes                |
+| 26-DoubleEntryPoint | No      | No                 |
+| 27-GoodSamaritan    | No      | Yes                |
+| 28-GateKeeperThree  | No      | No                 |

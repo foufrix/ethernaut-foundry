@@ -4,7 +4,7 @@ out = 'out'
 libs = ['lib']
 
 [rpc_endpoints]
-goerli = 'https://goerli.infura.io/v3/apikey'
+goerli = 'https://goerli.infura.io/v3/899431222d5f44039c761b08b6281cb4'
 
 etherscan_api_key = "YOURETHERSCANAPIKEY"
 

@@ -20,8 +20,6 @@ contract Level20Test is Test {
 
     }
 
-    //TODO: find a way to compile into sol 0.5 with foundry, script working because Interface ok.
-
     function testLevel20() public {
       assertEq(vm.addr(1), level20.owner());
 
