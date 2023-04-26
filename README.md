@@ -22,7 +22,7 @@ Add wallet information, for better security don't use your main wallet for testi
 
 1. Add RPC url to `foundry.toml`
 2. Add `PRIVATE_KEY` to `.env`
-3. Call possible using : `forge script ./script/Level01.s.sol  --broadcast -vvvv --rpc-url goerli `
+3. Call possible using : `forge script ./script/Level01.s.sol  --broadcast -vvvv --rpc-url goerli`
 
 ## Deploy an Attacker Contract
 
