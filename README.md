@@ -24,6 +24,8 @@ Add wallet information, for better security don't use your main wallet for testi
 2. Add `PRIVATE_KEY` to `.env`
 3. Call possible using : `forge script ./script/Level01.s.sol  --broadcast -vvvv --rpc-url goerli`
 
+_Goerli price have exploded since I've done ethernaut, recommended to use a L2 testnet_
+
 ## Deploy an Attacker Contract
 
 `forge create --rpc-url goerli --private-key <your_private> src/Level04-Attacker.sol:AttackerLevel04`
@@ -69,7 +71,7 @@ All the files to test exploit on chain
 | 20-Denial           | ✅      | ✅                 |
 | 21-Shop             | ❌      | ❌                 |
 | 22-Dex              | ✅      | ✅                 |
-| 23-DexTwo           | ✅      | ❌                 |
+| 23-DexTwo           | ✅      | ✅                 |
 | 24-PuzzleWallet     | ❌      | ✅                 |
 | 25-Motorbike        | ❌      | ✅                 |
 | 26-DoubleEntryPoint | ❌      | ❌                 |

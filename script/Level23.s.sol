@@ -5,7 +5,7 @@ import "forge-std/Script.sol";
 import "../src/Level23.sol";
 
 contract AttackerScript is Script {
-    DexTwo public dex = DexTwo(0xc5F8b1Cda90D0E74af3392f90e143203b66a22Fb);
+    DexTwo public dex = DexTwo(0xbED0B8F2Fdc5c2dA6C769C264B01D403Bfccb9e7);
     address tk1 = dex.token1();
     address tk2 = dex.token2();
     address tk3;
@@ -13,7 +13,7 @@ contract AttackerScript is Script {
     SwappableTokenTwo public token2 = SwappableTokenTwo(tk2);
     SwappableTokenTwo public token3;
 
-    address bob = vm.addr(1); // exploiter address here
+    address bob = 0x6bB635a27447c6bDDE8935557fe73E34AaF76Eea; // exploiter address here
 
 
 
