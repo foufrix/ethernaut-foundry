@@ -64,7 +64,7 @@ All the files to test exploit on chain
 | 15-NaughtCoin       | ✅      | ✅                 |
 | 16-Preservation     | ✅      | ✅                 |
 | 17-Recovery         | ❌      | ✅                 |
-| 18-MagicNumber      | ❌      | ❌                 |
+| 18-MagicNumber      | ❌      | ✅                 |
 | 19-AlienCodex       | ❌      | ✅                 |
 | 20-Denial           | ✅      | ✅                 |
 | 21-Shop             | ❌      | ❌                 |
