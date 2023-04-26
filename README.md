@@ -75,3 +75,5 @@ All the files to test exploit on chain
 | 26-DoubleEntryPoint | ❌      | ❌                 |
 | 27-GoodSamaritan    | ❌      | ✅                 |
 | 28-GateKeeperThree  | ❌      | ❌                 |
+
+_Note: most of levels are solved. I encountered some difficulties to make them all work locally and on-chain, feel free to drop a PR to solve that 🙏_
